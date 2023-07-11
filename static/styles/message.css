@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  margin: 0;
+  background-color: #111;
+  width: 100%;
+  font-family: "Cutive Mono", monospace;
+  color: white;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+}
+
+.container {
+  position: relative;
+  /* top: 5rem; */
+  height: auto;
+  display: flex;
+  width: 85% !important;
+  text-align: center;
+  padding: 5rem;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* justify-content: center; */
+}
+
+#galleryBtn {
+  display: none;
+  position: relative;
+  margin: 7rem 0rem;
+}
+
+.text {
+  font-size: 2rem;
+  font-family: "Sacramento";
+}
+
+h1 {
+  font-size: 3/5rem !important;
+  font-family: "Cutive Mono", monospace !important;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.text>span {
+  animation: letter-glow 0.7s 0s ease both;
+}
+
+.sep {
+  position: relative;
+  display: block;
+  border: 0;
+  width: 4em;
+  left: 50%;
+  height: 1px;
+  margin: 1em 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+
+/* Styles for all devices */
+
+/* Add your existing CSS styles here */
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+  .container {
+    height: 100vh;
+  }
+
+  .text {
+    font-size: 1.7rem;
+    position: relative;
+  }
+}
+
+@keyframes letter-glow {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.2);
+  }
+
+  66% {
+    opacity: 1;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  }
+
+  77% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
+  }
+}

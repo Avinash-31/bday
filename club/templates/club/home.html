@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+
+{% block contents %}
+  <main>
+    <div id='stars1'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+    <div id="container">
+      
+      <a href="candle" id="candleClick">
+        <div id="cake">
+          
+          <div id="flame">
+            <div id="inner-flame"></div>
+          </div>
+          <div class="underline"></div>
+        </div>
+      </a>
+      <div id="countdown">
+        <div id="cdDays">
+          <div class="spacer"></div>
+          <div id="daysNum"></div>
+          <div class="label">DAY(S)</div>
+        </div>
+        <div id="cdHours">
+          <div class="spacer"></div>
+          <div id="hoursNum"></div>
+          <div class="label">HOURS</div>
+        </div>
+        <div id="cdMins">
+          <div class="spacer"></div>
+          <div id="minsNum"></div>
+          <div class="label">MINUTES</div>
+        </div>
+        <div id="cdSecs">
+          <div class="spacer"></div>
+          <div id="secsNum"></div>
+          <div class="label">SECONDS</div>
+        </div>
+        <div id="text">UNTIL MY BIRTHDAY</div>
+      </div>
+    </div>
+  </main>
+  <script src="/static/javascript/home.js"></script>
+{% endblock %}

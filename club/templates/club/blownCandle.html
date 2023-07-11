@@ -1,0 +1,55 @@
+{% extends 'index.html' %}
+
+{% block contents %}
+  <main>
+    <audio id="musicBD" src="/static/audio/happy.mp3" loop="loop"></audio>
+    <div id="customAlert" class="alert">
+      <div class="alert-content">
+        <img src="/static/images/bg.jpg" class="bday_img" alt="">
+        <br>
+        <a href="Message">
+          <button id="closeAlert">Close</button>
+        </a>
+      </div>
+    </div>
+    <div id='stars1'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+    <div id="container">
+      
+      
+        <div id="cake">
+          
+          <div id="flame">
+            <div id="inner-flame"></div>
+          </div>
+          <div class="underline"></div>
+        </div>
+      
+      <div id="countdown">
+        <div id="cdDays">
+          <div class="spacer"></div>
+          <div id="daysNum"></div>
+          <div class="label">DAY(S)</div>
+        </div>
+        <div id="cdHours">
+          <div class="spacer"></div>
+          <div id="hoursNum"></div>
+          <div class="label">HOURS</div>
+        </div>
+        <div id="cdMins">
+          <div class="spacer"></div>
+          <div id="minsNum"></div>
+          <div class="label">MINUTES</div>
+        </div>
+        <div id="cdSecs">
+          <div class="spacer"></div>
+          <div id="secsNum"></div>
+          <div class="label">SECONDS</div>
+        </div>
+        <div id="text">UNTIL MY BIRTHDAY</div>
+      </div>
+    </div>
+  </main>
+  <script src="/static/javascript/test.js"></script>
+{% endblock %}

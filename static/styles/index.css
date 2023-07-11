@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Audiowide', cursive !important;
+    font-family: 'Dancing Script', cursive !important;
+}
+
+/* Navbar */
+/* background image */
+.background {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    object-fit: cover;
+    object-position: 30%;
+}
+
+/* .background img:hover, .background img:focus {
+    transform: scale(1.2);
+} */
+
+/* navigation bar */
+.header {
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    position: fixed;
+    width: 100%;
+    height: 5.3rem;
+    top: 0rem;
+    right: 0;
+    left: 0;
+    justify-content: end;
+    align-items: center;
+    padding: 1.1rem 1.8rem 1.1rem 1.8rem;
+    /* border-radius: 0.4rem; */
+    z-index: 2;
+}
+
+.bgColor {
+    /* background-color: hwb(0 50% 50% / 0.6); */
+    backdrop-filter: blur(10px);
+}
+
+.logo,
+.logo-text {
+    position: fixed;
+    width: 2.6rem;
+    height: auto;
+    left: 1.7rem;
+    top: 1.3rem;
+}
+
+.logo-text {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.7rem;
+    top: 1.6rem;
+    left: 5.1rem;
+    white-space: nowrap;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.menu svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* .line {
+    fill: none;
+    stroke: #161616;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+    }
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+    }
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+} */
+
+.hamburger {
+    position: fixed;
+    top: 1rem;
+    right: 1.2rem;
+    z-index: 4;
+}
+
+.menu {
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+
+.line {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+.links {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    padding: 10rem;
+    background-color: hwb(0 14% 85% / 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 0.3rem;
+}
+
+.links ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links ul li {
+    white-space: nowrap;
+}
+
+.links ul a,
+.links ul a:visited {
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.links ul a:hover,
+.links ul a:focus {
+    opacity: 0.6;
+}
+
+.slogan {
+    position: absolute;
+    width: 100%;
+    bottom: 5.3rem;
+    color: rgb(183, 183, 183);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+
+.slogan p {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+}
+
+/* footer */
+.footer-header1,
+.footer-header2,
+.footer-header3,
+.footer-header4 {
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+footer .footer-info {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    background-color: #161616;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.social-media {
+    width: 4rem;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: start;
+    gap: 1rem;
+}
+
+.smbg,
+.smbg:visited {
+    padding: 0.2rem 0.6rem 0.4rem 0.6rem;
+    background-color: hwb(0 50% 50% / 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.bi {
+    width: 1.1rem;
+    height: auto;
+    color: rgb(255, 255, 255);
+}
+
+.smbg:hover,
+.smbg:focus {
+    background-color: rgb(255, 255, 255);
+
+    .bi-instagram {
+        color: #E1306C;
+    }
+
+    .bi-linkedin {
+        color: #0077B5;
+    }
+}
+
+.footer-header3 a,
+.footer-header3 a:visited,
+.footer-header2 a,
+.footer-header2 a:visited {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.footer-header3 a:hover,
+.footer-header3 a:focus,
+.footer-header2 a:hover,
+.footer-header2 a:focus {
+    color: white;
+}
+
+footer .footer-info:hover {
+    transform: translateX(8px);
+    color: white;
+}

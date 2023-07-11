@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+
+{% block contents %}
+
+<main>
+
+    <section class="gallery-section">
+
+        <p class="about-us">GALLERY</p>
+        <div class="header-line6"></div>
+        <div class="all-section">
+            <p class="all">RECENT PHOTOS <span>&nbsp; (12 images)</span></p>
+            <div class="gallery">
+            {% for gallery in galleryimages|slice:":12" %}
+                <div class="imgBox">
+                <img src="{{ gallery.Image.url }}" alt="">
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+         <div class="gallery-event-section">
+            {% for event_name in galleryheadings %}
+                <p class="event-heading">{{ event_name.heading }}</p>
+                <div class="gallery-card">
+                    {% for gallery in galleryimages %}
+                        {% if gallery.EventName == event_name.heading %}
+                        <div class="imgBox">
+
+                            <img src="{{ gallery.Image.url }}" alt="">
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endfor %}
+         </div>
+
+    </section>
+
+</main>
+
+{% endblock %}

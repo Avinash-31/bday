@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+
+{% block contents %}
+
+<main>
+  <style>
+    body {
+      background-color: #1e1934 !important;
+      background-image: none !important;
+      color: white !important;
+    }
+  </style>
+  <section class="candle">
+    <h1>
+      Make a wish..<br/>.. and blow out the candle</h1>
+   <div class="glow" id="glow"></div>
+   <div id="candle">
+     <div class="stripe"></div>
+     <div class="stripe"></div>
+     <div class="stripe"></div>
+     <div class="stripe"></div>
+     <div class="stripe"></div>
+     <div id="top">
+       <div class="smoke"></div>
+       <div class="smoke"></div>
+       <div class="smoke"></div>
+       <div id="knot"></div>
+       <div class="burn" id="flame"></div>
+     </div>
+   </div>
+   <!-- partial -->
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        
+   <script src="/static/javascript/candle.js"></script>
+  </section>
+    
+</main>
+
+{% endblock %}
