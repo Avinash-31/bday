@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Sacramento");
-
+::-webkit-scrollbar {
+  display: none;
+}
 
 h1 {
   position: fixed;

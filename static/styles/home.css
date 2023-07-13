@@ -12,6 +12,21 @@ body {
   font-family: 'Audiowide', cursive;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* skip */
+.skip{
+  position: fixed;
+  right: 1rem;
+  display: none;
+  top:0.5rem;
+  z-index: 100000;
+}
+.skipBtn{
+  background-color: #c9b6b6;
+}
 
 .alert {
   position: absolute;
@@ -21,7 +36,6 @@ body {
   left: 50%;
   display: flex;
   color: white !important;
-  border:1px solid red !important;
   justify-content: center !important;
   align-items: center !important;
   transform: translate(-50%, -50%);
@@ -35,7 +49,8 @@ body {
 
 .bday_img{
   position: relative;
-  width:65%;
+  width:75%;
+  top:-4rem;
   height: auto;
 }
 
@@ -54,12 +69,20 @@ body {
 }
 
 .alert button {
-  background-color: #2196f3;
+  background-color: #d2d2d21b;
   color: #fff;
   padding: 8px 16px;
   border: none;
-  border-radius: 3px;
+  text-align: center;
+  position: relative;
+  top:-4rem;
+  border-radius: 2rem;
   cursor: pointer;
+}
+
+.alert button:hover{
+  background-color: #4840406f;
+  transform: scale(0.9);
 }
 
 body #container {
@@ -106,15 +129,15 @@ body #container #cake::before {
   position: absolute;
   width: 7px;
   height: 5px;
-  background-color: lightblue;
-  box-shadow: 0px 5px 0px white, 0px 10px 0px lightblue, 0px 15px 0px white, 0px 20px 0px lightblue, 0px 25px 0px white, 0px 30px 0px lightblue, 0px 35px 0px white, 0px 40px 0px lightblue, 0px 45px 0px white, 0px 50px 0px lightblue;
+  background-color: rgba(252, 33, 4, 0.825);
+  box-shadow: 0px 5px 0px white, 0px 10px 0px rgba(252, 33, 4, 0.825), 0px 15px 0px white, 0px 20px 0px rgba(252, 33, 4, 0.825), 0px 25px 0px white, 0px 30px 0px rgba(252, 33, 4, 0.825), 0px 35px 0px white, 0px 40px 0px rgba(252, 33, 4, 0.825), 0px 45px 0px white, 0px 50px 0px rgba(252, 33, 4, 0.825);
   top: -25px;
 }
 
 body #container #cake #flame {
   width: 18px;
   height: 18px;
-  background: yellow;
+  background: rgb(253, 182, 2);
   position: absolute;
   z-index: 6;
   border-radius: 80% 0 55% 50%/55% 0 80% 50%;
@@ -128,7 +151,7 @@ body #container #cake #flame {
 body #container #cake #flame #inner-flame {
   width: 10px;
   height: 10px;
-  background: #d1835c;
+  background: #dbdbdb;
   position: absolute;
   z-index: 8;
   border-radius: 80% 0 55% 50%/55% 0 80% 50%;

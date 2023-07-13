@@ -1,19 +1,19 @@
 from django.shortcuts import render
-from .models import Sponsers, EventsList, GalleryImages, GalleryHeadings, TeamMembers, TeamHeadings
+from .models import  GalleryImages, GalleryHeadings
 import datetime
 # Create your views here.
 
 def  home(request):
-    sponsers = Sponsers.objects.all()
-    eventslist = EventsList.objects.all()
-    context = {'sponsers': sponsers, 'eventslist':eventslist}
-    return render(request,'club/home.html', context)
+    # sponsers = Sponsers.objects.all()
+    # eventslist = EventsList.objects.all()
+    # context = {'sponsers': sponsers, 'eventslist':eventslist}
+    return render(request,'club/home.html')
 
 
 def blownCandle(request):
-    eventslist = EventsList.objects.all()
-    context = {'eventslist':eventslist}
-    return render(request,'club/blownCandle.html', context)
+    # eventslist = EventsList.objects.all()
+    # context = {'eventslist':eventslist}
+    return render(request,'club/blownCandle.html')
 
 
 def Gallery(request):
@@ -26,8 +26,8 @@ def Message(request):
     return render(request,'club/Message.html')
 
 def  candle(request):
-    teammembers = TeamMembers.objects.all()
-    teamheadings = TeamHeadings.objects.all()
-    context = {'teammembers': teammembers, 'teamheadings':teamheadings}
-    return render(request,'club/candle.html', context)
+    # teammembers = TeamMembers.objects.all()
+    # teamheadings = TeamHeadings.objects.all()
+    # context = {'teammembers': teammembers, 'teamheadings':teamheadings}
+    return render(request,'club/candle.html')
 
